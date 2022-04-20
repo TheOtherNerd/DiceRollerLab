@@ -42,8 +42,8 @@
     {
         Random dice = new Random();
 
-        roll1 = dice.Next(1, sides);
-        roll2 = dice.Next(1, sides);
+        roll1 = dice.Next(1, sides+1);
+        roll2 = dice.Next(1, sides+1);
         sum = roll1 + roll2;
         if (sides == 6)
         {
@@ -62,7 +62,7 @@
         {
             Console.WriteLine("Ace deuce!");
         }
-        if (roll1 == 6 && roll1 == 6)
+        if (roll1 == 6 && roll2 == 6)
         {
             Console.WriteLine("Box cars!");
         }
